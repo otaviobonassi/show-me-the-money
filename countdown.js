@@ -1,7 +1,6 @@
 
 function timeCountDown(deadline){
-    let today = new Date().getTime();
-    let timeLeft = Date.parse(deadline) - today;
+    let timeLeft = Date.parse(deadline) - Date.now();
     let days = Math.floor(timeLeft / (1000*60*60*24));
     let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
