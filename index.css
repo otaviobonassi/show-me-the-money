@@ -62,6 +62,10 @@ button:hover {
 	box-sizing: border-box;
 }
 
+.grifado {
+	background: #E7B200;
+	padding: 0.3%;
+}
 
 
 /* ------------------------------------------------------------- NAVBAR --------------------------------------------------------------- */
@@ -105,6 +109,10 @@ button:hover {
 
 .header-hamburger-menu {
 	display: none;
+}
+
+hr {
+	display:none;
 }
 
 
@@ -161,7 +169,7 @@ button:hover {
 }
 
 .cta .cta-text h1 b {
-	color: #E8B200;
+	color: #fab301;
 	background-color: #333333;
 	padding: 1% 1.1%;
 	border-radius: 0.9px;
@@ -198,7 +206,7 @@ button:hover {
 }
 
 .highlight {
-	color: #E8B200;
+	color: #fab301;
 	background-color: #333333;
 	padding: .7% 1%;
 	border-radius: 0.9px;
@@ -244,7 +252,7 @@ button:hover {
 
 .chamariz .cta-text button {
 	width: 50%;
-	background: #E8B200;
+	background: #fab301;
 	border: 0px;
 	border-radius: 100px;
 	padding: 2%;
@@ -276,7 +284,7 @@ button:hover {
 
 .palestrantes button {
 	width: 30%;
-	background: #E8B200;
+	background: #fab301;
 	border: 0px;
 	border-radius: 100px;
 	padding: 2%;
@@ -297,7 +305,7 @@ button:hover {
 }
 
 .palestrantes h2 {
-	color: #E8B200;
+	color: #fab301;
 	font-weight: 500;
 	font-size: 2rem;
 	line-height: 2rem;
@@ -325,12 +333,24 @@ button:hover {
 }
 
 .palestrantes-description div{
-	width:23%;
+	width: 30%;
 	text-align: center;
 	/* min-width: 220px; */
 }
 
+.palestrantes-description div h3{
+	width: 90%;
+	margin: auto;
+	font-weight: 700;
+	font-size: 0.85rem;
+	line-height: 1.4rem;
+	letter-spacing: 0.07rem;
+}
+
 .palestrantes-description div p{
+	width: 90%;
+	margin: auto;
+	text-align: center;
 	font-weight: 400;
 	font-size: 0.85rem;
 	line-height: 1.4rem;
@@ -338,17 +358,28 @@ button:hover {
 	margin-top: 5%;
 }
 
-.palestrante .seta-esquerda {
+img[src="images/seta-esquerda-on.png"]{
 	display: none;
 }
 
-.palestrante .seta-direita {
-	display:none;
+img[src="images/seta-direita-on.png"]{
+	display: none;
+}
+
+.palestrante-wrapper {
+	display: flex;
+	max-width: 1340px;
+	width: 98vw;
+	justify-content: space-around;
+}
+
+.palestrante {
+	width: 30vw;
 }
 
 .flip-card {
 	perspective: 1000px;
-	width: 224px;
+	width: 220px;
 	margin: auto;
 }
 
@@ -372,7 +403,7 @@ button:hover {
 	position: absolute;
 	-webkit-backface-visibility: hidden; /* Safari */
 	backface-visibility: hidden;
-	background: #E8B200;
+	background: #fab301;
 }
 
 .flip-card-back {
@@ -408,7 +439,7 @@ button:hover {
 }
 
 .vendedor-do-futuro .text h2 b {
-	color: #E8B200;
+	color: #fab301;
 	background-color: #333333;
 	padding: .7% .7%;
 	border-radius: 0.9px;
@@ -453,7 +484,7 @@ button:hover {
 
 .side-text .countDown {
 	border-radius: 3px;
-	background: #E8B200;
+	background: #fab301;
 	padding: 5%;
 	margin-bottom: 10%;
 }
@@ -475,7 +506,7 @@ button:hover {
 }
 
 .side-text .countDown p b {
-	color: #E8B200;
+	color: #fab301;
 	background-color: #333333;
 	padding: 1% 3%;
 	border-radius: 0.9px;
@@ -641,6 +672,13 @@ button:hover {
 		text-align: center;
 	}
 
+	hr {
+		width: 100%;
+		border-radius: 5px;
+		border: 0.5px solid #CCCCCC;
+		margin: 0;
+	}
+
 	.options {
 		display: none;
 	}
@@ -650,13 +688,15 @@ button:hover {
 		position: absolute;
 		width: 50%;
 		right: 5%;
-		top: 8%;
-		height: 20vh;
+		top: 10%;
+		height: 26vh;
+		width: 55vw;
 		border-radius: 7px;
 	}
 
 	.links-on {
 		display: flex;
+		width: 100%;
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -667,13 +707,19 @@ button:hover {
 		display: flex;
 	}
 
-	.header-hamburger-menu-on a {
+	.header-hamburger-menu-on img {
 		display: inline-block;
-		padding-left: 40px;
+		padding-left: 40%;
+		width: 50%;
+	}
+
+	.links-on li {
+		width: 100%;
+		padding: 1% 0 1% 10%;
 	}
 
 	.links-on li a{
-		color:#E8B200;	
+		color:#fab301;	
 	}
 
 
@@ -737,7 +783,7 @@ button:hover {
 	}
 
 	.cta .cta-text h1 b {
-		color: #E8B200;
+		color: #fab301;
 		background-color: #333333;
 		padding: 1% 1.1%;
 		border-radius: 0.9px;
@@ -818,7 +864,7 @@ button:hover {
 
 	.chamariz .cta-text button {
 		width: 50%;
-		background: #E8B200;
+		background: #fab301;
 		border: 0px;
 		border-radius: 100px;
 		padding: 2%;
@@ -839,122 +885,166 @@ button:hover {
 	}
 
 	.highlight {
-		color: #E8B200;
+		color: #fab301;
 		background-color: #333333;
 		border-radius: 0.9px;
 		font-size: 1.8rem;
 	}
 
 	/* ------------------------------------------------------------- PALESTRANTES ------------------------------------------------------- */
+	.palestrantes {
+		background-color: #333333;
+		padding: 6% 0;
+		color: #FFFFFF;
+		text-align: center;
+		width: 100vw;
+		/* min-width: 1000px; */
+	}
 
-.palestrantes {
-	background-color: #333333;
-	padding: 6% 0;
-	color: #FFFFFF;
-	text-align: center;
-	height: 2100px;
-	/* min-width: 1000px; */
-}
+	.palestrantes-full {
+		overflow-x: auto;
+		display: flex;
+		flex-direction: column;
+		margin-top: 8%;
+	}
 
-.palestrantes button {
-	width: 60%;
-	position: relative;
-	bottom: 1320px;
-	background: #E8B200;
-	border: 0px;
-	border-radius: 100px;
-	padding: 2%;
-	margin: 5% 0 0 0;
-	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-	-moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-	-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-}
+	.palestrantes button {
+		width: 70%;
+		background: #fab301;
+		border: 0px;
+		border-radius: 100px;
+		padding: 4%;
+		margin: 10% 0 5% 0;
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+		-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	}
+		
+	.palestrantes button:hover {
+		background: #D3A407;
+	}
+		
+	.palestrantes button a {
+		color: #333333;
+		font-weight: 700;
+		font-size: 1rem;
+	}
 	
-.palestrantes button:hover {
-	background: #D3A407;
-}
+	.palestrantes h2 {
+		color: #fab301;
+		font-weight: 500;
+		font-size: 1.3rem;
+		line-height: 2rem;
+		letter-spacing: 0.4rem;
+		text-align: center;
+	}
 	
-.palestrantes button a {
-	color: #333333;
-	font-weight: 700;
-	font-size: 1.2rem;
-}
+	.palestrantes-container {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		margin-top: 2%;
+		max-width: 1340px;
+	}
 
-.palestrantes h2 {
-	color: #E8B200;
-	font-weight: 500;
-	font-size: 1.2rem;
-	line-height: 2rem;
-	letter-spacing: 0.4rem;
-	text-align: center;
-}
+	.palestrantes-description {
+		margin-top: 6%;
+		display: flex;
+		justify-content: flex-start;
+	}
 
-.palestrantes-container {
-	margin: auto;
-	width: 100%;
-	display: flex;
-	height: 1400px;
-	position: relative;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-top: 5%;
-	max-width: 1340px;
-}
+	.palestrante-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+	}
 
-.palestrantes-description {
-	display: flex;
-	flex-direction: column;
-	height: 1500px;
-	justify-content: space-between;
-	position: relative;
-	bottom: 1380px;
-	width: 85%;
-	max-width: 1340px;
-}
+	img[src="images/seta-esquerda-on.png"]{
+		display: block;
+		position: absolute;
+		left: 15px;
+	}
 
-.palestrantes-description div{
-	width:100%;
-	text-align: center;
-	/* min-width: 220px; */
-}
+	img[src="images/seta-direita-on.png"]{
+		display: block;
+		position: absolute;
+		right: 15px;
+	}
+		
+	.palestrantes-description div{
+		margin: 0;
+		width:85%;
+		text-align: center;
+		/* min-width: 220px; */
+	}
 
-.palestrantes-description div p{
-	font-weight: 400;
-	font-size: 0.85rem;
-	line-height: 1.4rem;
-	letter-spacing: 0.07rem;
-	margin-top: 5%;
-}
+	.palestrantes-description div h3 {
+		margin:0 auto;
+	}
+	
+	.palestrantes-description div p{
+		font-weight: 400;
+		font-size: 0.85rem;
+		line-height: 1.4rem;
+		letter-spacing: 0.07rem;
+		margin-top: 5%;
+		width: 85%;
+	}
+	
+	.palestrante {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		min-width: 100vw;
 
-.palestrante .seta-esquerda {
-	display: none;
-}
-
-.palestrante .seta-direita {
-	display:none;
-}
-
-.flip-card {
-	perspective: 1000px;
-	width: 224px;
-	margin: auto;
-}
-
-.flip-card-front, .flip-card-back {
-	color: #333333;
-	width: 100%;
-	min-width: 217px;
-	min-height: 217px;
-	border-radius: 50%;
-	position: relative;
-	-webkit-backface-visibility: visible; /* Safari */
-	backface-visibility: visible;
-	background: #E8B200;
-}
-
-.flip-card-back {
-	display: none;
-}
+	}
+	
+	.flip-card {
+		perspective: 1000px;
+		min-width: 100vw;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.flip-card:hover .flip-card-inner {
+		transform: rotateY(180deg);
+	}
+	
+	.flip-card-inner {
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+		position: relative;
+		width: 220px;
+		height: 220px;
+	}
+	
+	
+	.flip-card-front, .flip-card-back {
+		color: #333333;
+		width: 100%;
+		min-width: 220px;
+		min-height: 220px;
+		border-radius: 50%;
+		position: absolute;
+		-webkit-backface-visibility: hidden; /* Safari */
+		backface-visibility: hidden;
+		background: #fab301;
+	}
+	
+	.flip-card-back {
+		transform: rotateY(180deg);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.flip-card-back p {
+		width: 60%;
+		text-align: center;
+		margin-bottom: 7%;
+	}
 
 	/* ------------------------------------------------------------- VENDEDOR DO FUTURO ------------------------------------------------- */
 
@@ -976,7 +1066,7 @@ button:hover {
 	}
 
 	.vendedor-do-futuro .text h2 b {
-		color: #E8B200;
+		color: #fab301;
 		background-color: #333333;
 		padding: 2% 2%;
 		border-radius: 0.9px;
@@ -1028,7 +1118,7 @@ button:hover {
 
 	.side-text .countDown {
 		border-radius: 3px;
-		background: #E8B200;
+		background: #fab301;
 		padding: 5%;
 		margin-bottom: 10%;
 	}
@@ -1050,7 +1140,7 @@ button:hover {
 	}
 
 	.side-text .countDown p b {
-		color: #E8B200;
+		color: #fab301;
 		background-color: #333333;
 		padding: 1% 3%;
 		border-radius: 0.9px;
@@ -1071,7 +1161,8 @@ button:hover {
 
 	.side-text .countDown .counter {
 		display: flex;
-		width: 90%;
+		max-width: 285px;
+		width: 85%;
 		margin: 8% auto 4%;
 		justify-content: space-between;
 	}
