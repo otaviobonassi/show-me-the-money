@@ -17,7 +17,10 @@ function timeCountDown(deadline){
     };
 }
 
-const h1 = document.querySelector('h1');
+const days = document.querySelector('#dias');
+const hours = document.querySelector('#horas');
+const minutes = document.querySelector('#minutos');
+const seconds = document.querySelector('#segundos');
 
 function clock() {
     let tic = setInterval( function() {
@@ -27,7 +30,10 @@ function clock() {
             clearInterval(tic);
         }
 
-        h1.innerText = timeObj.days + "dias - " + timeObj.hours + " horas - " + timeObj.minutes + " minutos - " + timeObj.seconds + " segundos";
+        days.innerText = timeObj.days;
+        hours.innerText = timeObj.hours;
+        minutes.innerText = timeObj.minutes;
+        seconds.innerText = timeObj.seconds;
         //IE não aceita template literal ``, por isso tive que fazer do jeito "antigo"
     }, 1000);
 }

@@ -1,7 +1,550 @@
-h2 {
-    visibility: hidden;
+
+/* ------------------------------------------------------------- CSS RESET / SETUP ---------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
 }
 
-.popup {
-    visibility: visible;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background-color: #FFFFFF;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+	margin: auto;
+	min-width: 1000px;
+}
+
+h1, h2, h3, h4, h5, h6, li, a, p{
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+/* ------------------------------------------------------------- NAVBAR --------------------------------------------------------------- */
+
+.hero {
+	background-image: url("images/frame_web.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-width: 1000px;
+}
+
+.navbar {
+	padding: 2% 0 2% 0;
+	display: flex;
+	max-width: 1440px;
+	margin: auto;
+}
+
+.logo {
+	width:45%;
+	text-align: center;
+}
+
+.logo img {
+	max-width: 173px;
+}
+
+.options {
+	width: 55%;
+	align-self: flex-start;
+	justify-self: end;
+}
+
+#links {
+	margin: auto;
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+#links li{
+	font-weight: 500;
+	font-size: 0.9rem;
+	line-height: 20px;
+}
+
+
+#links li p:hover {
+	text-decoration: underline;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+/* ------------------------------------------------------------- CTA --------------------------------------------------------------- */
+.cta .cta-text {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+
+.cta {
+	display: flex;
+	margin: auto;
+	height:100%;
+	min-width: 1000px;
+	max-width: 1440px;
+}
+
+.cta .image {
+	width: 55%;
+	text-align: center;
+	position: relative;
+	bottom: 3.2vw;
+}
+
+.cta .cta-text p, .cta .cta-text h1  {
+	width: 80%;
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 1.7rem;
+	letter-spacing: 0.05rem;
+	margin: 0.1% 0;
+}
+
+.cta .cta-text h1 b {
+	color: #E8B200;
+	background-color: #333333;
+	padding: 1% 1.1%;
+	border-radius: 0.9px;
+	font-size: 1.5rem;
+}
+
+.cta .cta-text span {
+	font-weight: 500;
+}
+
+.cta .cta-text button {
+	width: 50%;
+	background: #333333;
+	border: 0px;
+	border-radius: 100px;
+	padding: 2%;
+	margin: 3% 0;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.cta .cta-text button:hover {
+	background: #E5E5E5;
+}
+
+.cta .cta-text button a {
+	color: #FFFFFF;
+	font-size: 1.1rem;
+}
+
+.highlight {
+	color: #E8B200;
+	background-color: #333333;
+	padding: .7% 1%;
+	border-radius: 0.9px;
+	line-height: 3rem;
+	font-size: 1.3rem;
+}
+
+/* ------------------------------------------------------------- CHAMARIZ --------------------------------------------------------------- */
+.chamariz {
+	display: flex;
+	padding-bottom: 5%;
+	min-width: 1000px;
+	max-width: 1440px;
+	margin: 3% auto 0;
+}
+
+.chamariz .image {
+	width: 40%;
+	margin-left: 17%;
+}
+
+.chamariz .cta-text {
+	font-weight: 500;
+	width: 60%;
+}
+
+.chamariz .cta-text p, .chamariz .cta-text h2 {
+	margin: 1.5% 0;
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 1.7rem;
+	letter-spacing: 0.05rem;
+	width: 90%;
+}
+
+.chamariz .cta-text p a {
+	color: #9C7700;
+}
+
+.chamariz .cta-text p a:hover {
+	text-decoration: underline;
+}
+
+.chamariz .cta-text button {
+	width: 50%;
+	background: #E8B200;
+	border: 0px;
+	border-radius: 100px;
+	padding: 2%;
+	margin: 2% 0;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.chamariz .cta-text button:hover {
+	background: #E5E5E5;
+}
+
+.chamariz .cta-text button a {
+	color: #333333;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+/* ------------------------------------------------------------- PALESTRANTES ------------------------------------------------------- */
+
+.palestrantes {
+	background-color: #333333;
+	padding: 5% 0;
+	color: #FFFFFF;
+	text-align: center;
+	min-width: 1000px;
+}
+
+.palestrantes button {
+	width: 30%;
+	background: #E8B200;
+	border: 0px;
+	border-radius: 100px;
+	padding: 2%;
+	margin: 5% 0 0 0;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+	
+.palestrantes button:hover {
+	background: #E5E5E5;
+}
+	
+.palestrantes button a {
+	color: #333333;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.palestrantes h2 {
+	color: #E8B200;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 2rem;
+	letter-spacing: 0.4rem;
+	text-align: center;
+}
+
+.palestrantes-container {
+	margin: auto;
+	width: 83%;
+	display: flex;
+	justify-content: space-between;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+.palestrantes-description {
+	display: flex;
+	width: 88%;
+	margin: auto;
+	justify-content: space-between;
+	margin-top: 220px;
+}
+
+.palestrantes-description div{
+	width:28%;
+	text-align: center;
+	min-width: 220px;
+}
+
+.palestrantes-description div p{
+	font-weight: 400;
+	font-size: 0.85rem;
+	line-height: 1.4rem;
+	letter-spacing: 0.07rem;
+	margin-top: 5%;
+}
+
+.flip-card {
+	perspective: 1000px;
+	width: 217px;
+	margin: auto;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+
+.flip-card-front, .flip-card-back {
+	min-width: 217px;
+	min-height: 217px;
+	border-radius: 50%;
+	position: absolute;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+	background: #E8B200;
+}
+
+.flip-card-back {
+	transform: rotateY(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.flip-card-back p {
+	width: 60%;
+	text-align: center;
+	margin-bottom: 7%;
+}
+
+/* ------------------------------------------------------------- VENDEDOR DO FUTURO ------------------------------------------------- */
+
+.vendedor-do-futuro {
+	display: flex;
+	width: 90%;
+	margin: 5% auto 3%;
+	justify-content: space-between;
+	align-items: center;
+	color: #263238;
+	min-width: 1000px;
+	max-width: 1440px;
+}
+
+.vendedor-do-futuro .text {
+	width:55%;
+}
+
+.vendedor-do-futuro .text h2 b {
+	color: #E8B200;
+	background-color: #333333;
+	padding: .7% .7%;
+	border-radius: 0.9px;
+	line-height: 3rem;
+	font-size: 1.3rem;
+}
+
+.vendedor-do-futuro .text h4 {
+	margin-top: 7%;
+	letter-spacing: 0.05rem;
+}
+
+.vendedor-do-futuro .text h6 {
+	margin-top: 1%;
+	width: 100%;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+}
+
+.vendedor-do-futuro .text p {
+	font-size: 1.1rem;
+	letter-spacing: 0.02rem;
+	line-height: 1.6rem;
+	margin-top: 1.5%;
+}
+
+.vendedor-do-futuro .side-text {
+	width: 34%;
+	display: flex;
+	flex-direction: column;
+	max-width: 412px;
+}
+
+.side-text .image {
+	width: 100%;
+	text-align: center;
+}
+.side-text .image img{
+	max-width: 280px;
+	
+}
+
+.side-text .countDown {
+	border-radius: 3px;
+	background: #E8B200;
+	padding: 5%;
+	margin-bottom: 10%;
+}
+
+.side-text .countDown h2 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding-bottom: 5%;
+	text-align: center;
+	width: 95%;
+}
+
+.side-text .countDown p {
+	width: 98%;
+	text-align: center;
+	line-height: 1.9rem;
+	font-size: 1rem;
+	padding-bottom: 5%;
+}
+
+.side-text .countDown p b {
+	color: #E8B200;
+	background-color: #333333;
+	padding: 1% 3%;
+	border-radius: 0.9px;
+	font-size: 3rem;
+	line-height: 4.5rem;
+}
+
+.side-text .countDown p b span {
+	font-size: 1.4rem;
+}
+
+.side-text .countDown .counter {
+	display: flex;
+	width: 80%;
+	margin: 4% auto;
+	justify-content: space-between;
+}
+
+.side-text .countDown .counter div {
+	width: 68px;
+	height: 73px;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+}
+
+.side-text .countDown .counter div p {
+	text-align: center;
+	width: 100%;
+	font-size: 0.9rem;
+	line-height: 0.9rem;
+}
+
+#dias, #horas, #minutos, #segundos {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.side-text .countDown div {
+	width: 100%;
+	text-align: center;
+}
+
+.side-text .countDown div button {
+	width: 70%;
+	background: #333333;
+	border: 0px;
+	border-radius: 100px;
+	padding: 2%;
+	margin: 6% 0 4% 0;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.side-text .countDown button:hover {
+	background: #E5E5E5;
+}
+
+.side-text .countDown button a {
+	color: #FFFFFF;
+	font-size: 1.1rem;
+}
+
+/* ------------------------------------------------------------- FOOTER ------------------------------------------------------- */
+.quem-somos {
+	display:flex;
+	justify-content: space-between;
+	height:47vh;
+	background-image: url(images/bottom-web.png);
+	background-size: cover;
+}
+
+.redes-sociais{
+	width:30%;
+	align-self: flex-end;
+	padding-bottom: 4%;
+	align-content: center;
+}
+
+.redes-sociais h4 {
+	font-weight: 400;
+	margin-bottom: 4%;
+	text-align: center;
+}
+
+#redes-sociais {
+	text-align: center;
+}
+
+.sobre-nos {
+	width: 40%;
+	text-align: right;
+	align-self: center;
+	color: #FFFFFF;
+	margin: 30px 7% 0 0;
+}
+
+.sobre-nos p {
+	margin-top: 3%;
+	font-size: 1rem;
+	font-weight: 400;
 }
