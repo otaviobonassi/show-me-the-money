@@ -6,7 +6,7 @@ function timeCountDown(deadline){
     let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    console.log(timeLeft, days, hours, minutes, seconds);
+    // console.log(timeLeft, days, hours, minutes, seconds);
 
     return {
         timeLeft: timeLeft, //IE não aceita associação direta, obriga a ter o ":" na associação

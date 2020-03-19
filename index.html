@@ -8,6 +8,44 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
 
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '142990723649224');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=142990723649224&ev=PageView&noscript=1"
+    /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160262087-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-160262087-1');
+    </script>
+
+    <!-- Hotjar Tracking Code for https://www.vendacriativa.com.br/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1724626,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 
     <title>Venda Criativa</title>
 </head>
@@ -20,21 +58,25 @@
                         <a href="index.html" id="logo"><img src="images/logo.png" alt="Logo Venda Criativa"></a>
                     </div>
                     <div class="options">
-                        <ul id="links">
-                            <li><p>MASTERCLASS</p></li>
-                            <li><p>SOBRE NÓS</p></li>
-                            <li><p>CONTATO</p></li>
+                        <ul class="links">
+                            <li class="header-hamburger-menu">MENU<a href="" id="closing"><img src="images/closing.png" alt=""></a></li>
+                            <li><a href="#vendedor-do-futuro">MASTERCLASS</a></li>
+                            <li><a href="#quem-somos">SOBRE NÓS</a></li>
+                            <li><a href="#quem-somos">CONTATO</a></li>
                         </ul>
+                    </div>
+                    <div class="hamburger-menu">
+                        <a href="#" id="hamburger-menu"><img src="images/hamburger-menu.png" alt="menu"></a>
                     </div>
                 </div>
 
                 <section class="cta">
                     <div class="cta-text">
-                        <h1>Você é um <b>VENDEDOR DO FUTURO</b>?</h1><br> 
+                        <h1>Você é um <br><b><span> VENDEDOR DO FUTURO</b>?</h1><br> 
                         <p>Não perca o seu lugar na <span>Masterclass Inside Sales 
                             hacks</span> e descubra as táticas dos melhores especialistas do mercado!</p>
                         <p>ATENÇÃO, VAGAS LIMITADAS!</p>
-                        <button><a href="#">GARANTA JÁ SUA VAGA!</a></button>
+                        <button><a href="https://www.sympla.com.br/inside-sales-hacks-e-crm-estrategico__824917">GARANTA JÁ SUA VAGA!</a></button>
                     </div>
                     <div class="image">
                         <img src="images/ramp_up.png" alt="">
@@ -46,13 +88,13 @@
                         <img src="images/business_woman.png" alt="">
                     </div>
                     <div class="cta-text">
-                        <h2><b>Sua empresa está prepara para o <span class="highlight">FUTURO</span>?</b></h2>
+                        <h2><b>Sua empresa está preparada para o <span class="highlight">FUTURO</span>?</b></h2>
                         <p>Fique por dentro das melhores táticas de Inside Sales e descubra como as maiores
                             startups utilizam o CRM em seu arsenal</p>
-                        <p><b>Ainda não introuziu essas práticas no seu trabalho?</b></p>
+                        <p><b>Ainda não introduziu essas práticas no seu trabalho?</b></p>
                         <p><b><a href="#">Inscreva-se na nossa Masterclass</a></b> para saber mais com especialistas
                         de mercado nas áreas de Inside Sales e CRM Estratégico.</p>
-                        <button><a href="#">CONFIRA OS CONTEÚDOS</a></button>
+                        <button><a href="#vendedor-do-futuro">CONFIRA OS CONTEÚDOS</a></button>
                     </div>
                 </section>
             </div>
@@ -61,37 +103,43 @@
         <section class="palestrantes">
             <h2>CONHEÇA OS ESPECIALISTAS PALESTRANTES</h1>
             <div class="palestrantes-container">
+                
                 <div class="palestrante">
+                    <!-- <button href="" class="seta-esquerda"><img src="images/seta-esquerda-on.png" alt="" ></a> -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="images/palestrante-photo.png" alt="palestrante 1">
+                                <img id="speaker-one-photo" class="speaker-photo" src="images/palestrante_one.png" alt="palestrante 1">
                             </div>
                             <div class="flip-card-back">
                                 <p>Ver perfil no LinkedIn</p>
-                                <a href="#"><img src="images/linkedin_icon.png" alt="Perfil no LinkedIn"></a>
+                                <a href="https://www.linkedin.com/in/mayaraespinosa/"><img src="images/linkedin_icon.png" alt="Perfil no LinkedIn"></a>
                             </div>
                         </div>
                     </div>
+                    <!-- <button href="" class="seta-direita"><img src="images/seta-direita-on.png" alt="" ></a> -->
                 </div>
                 <div class="palestrante">
+                    <!-- <button href="" class="seta-esquerda"><img src="images/seta-esquerda-on.png" alt="" ></a> -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="images/palestrante-photo.png" alt="palestrante 1">
+                                <img src="images/palestrante_two.png" alt="palestrante 1">
                             </div>
                             <div class="flip-card-back">
                                 <p>Ver perfil no LinkedIn</p>
-                                <a href="#"><img src="images/linkedin_icon.png" alt="Perfil no LinkedIn"></a>
+                                <a href="https://www.linkedin.com/in/luciatorresmktsales/"><img src="images/linkedin_icon.png" alt="Perfil no LinkedIn"></a>
                             </div>
                         </div>
                     </div>
+                    <!-- <button href="" class="seta-direita"><img src="images/seta-direita-on.png" alt="" ></a> -->
                 </div>
                 <div class="palestrante">
+                    <!-- <button href="" class="seta-esquerda"><img src="images/seta-esquerda-on.png" alt="" ></a> -->
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="images/palestrante-photo.png" alt="palestrante 1">
+                                <img id="speaker-three-photo" class="speaker-photo" src="images/palestrante-photo.png" alt="palestrante 1">
                             </div>
                             <div class="flip-card-back">
                                 <p>Ver perfil no LinkedIn</p>
@@ -99,36 +147,37 @@
                             </div>
                         </div>
                     </div>
+                    <!-- <button href="" class="seta-direita"><img src="images/seta-direita-on.png" alt="" ></a> -->
                 </div>
             </div>
             <div class="palestrantes-description">
-                <div>
-                    <h3>
-                        NOME SOBRENOME
+                <div class="palestrante-one">
+                    <h3 id="speaker-one-name" class="speaker-name">
+                        MAYARA ESPINOSA
                     </h3>
-                    <p>
+                    <p id="speaker-one-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
                         occaecat cupidatat non proident, sunt in culpa qui officia deseru
                     </p>
                 </div>
-                <div>
-                    <h3>
-                        NOME SOBRENOME
+                <div class="palestrante-two palestrante-off">
+                    <h3 id="speaker-two-name" class="speaker-name">
+                        LUCIA TORRES
                     </h3>
-                    <p>
+                    <p id="speaker-two-description" class="speaker-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
                         occaecat cupidatat non proident, sunt in culpa qui officia deseru
                     </p>
                 </div>
-                <div>
-                    <h3>
+                <div class="palestrante-three palestrante-off">
+                    <h3 id="speaker-three-name" class="speaker-name">
                         NOME SOBRENOME
                     </h3>
-                    <p>
+                    <p id="speaker-three-description" class="speaker-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
@@ -136,13 +185,13 @@
                     </p>
                 </div>
             </div>
-            <button><a href="#">QUERO ME INSCREVER AGORA</a></button>
+            <button><a href="https://www.sympla.com.br/inside-sales-hacks-e-crm-estrategico__824917">QUERO ME INSCREVER AGORA</a></button>
     
         </section>
         
         
     <!----------------------------------------------------- VENDEDOR DO FUTURO ------------------------------------------------->
-        <section class="vendedor-do-futuro">
+        <section class="vendedor-do-futuro" id="vendedor-do-futuro">
             <div class="text">
                 <h2><b>O QUE UM VENDEDOR DO FUTURO PRECISA SABER?</b><br>
                     CONFIRA OS CONTEÚDOS DA MASTERCLASS.
@@ -174,6 +223,7 @@
                 <div class="countDown">
                     <h2>DIA 26/3, 19H as 22H</h2>
                     <p>MASTERCLASS ONLINE AO VIVO COM CONTEÚDO EXCLUSIVO POR APENAS <b>R$29,<span>90</span></b></p>
+                    <h6>CORRA, AS VAGAS SÃO LIMITADAS!</h6>
                     <div class="counter">
                         <div>
                             <h1 id="dias"></h1>
@@ -194,7 +244,7 @@
 
                     </div>
                     <div>
-                        <button><a href="#">COMPRAR AGORA</a></button>
+                        <button><a href="https://www.sympla.com.br/inside-sales-hacks-e-crm-estrategico__824917">COMPRAR AGORA</a></button>
                     </div>
                 </div>
                 <div class="image">
@@ -203,21 +253,21 @@
             </div>
         </section>
         <!--------------------------------------------------------- FOOTER ------------------------------------------------------->
-        <section class="quem-somos">
+        <section class="quem-somos" id="quem-somos">
             <div class="redes-sociais">
                 <h4>Nos apoie nas redes sociais</h4>
                 <div id="redes-sociais">
                     <a href="#"><img src="images/facebook.png" alt="Link para Facebook"></a>
-                    <a href="#"><img src="images/linkedIn.png" alt="Link para LinkedIn"></a>
-                    <a href="#"><img src="images/instagram.png" alt="Link para Instagram"></a>
+                    <a href="https://www.linkedin.com/company/venda-criativa/about/"><img src="images/linkedIn.png" alt="Link para LinkedIn"></a>
+                    <a href="https://www.instagram.com/venda.criativa/"><img src="images/instagram.png" alt="Link para Instagram"></a>
                 </div>
             </div>
             <div class="sobre-nos">
                 <h2>SOBRE NÓS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
-                    ident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <p>A <b>Venda Criativa</b> é uma rede de negócios colaborativa que tem como objetivo impulsionar o mercado, especialmente em tempos de 
+                    crise. Queremos facilitar a rotina do vendedor e capacitá-lo com técnicas exclusivas e inovadoras, além de dar suporte 
+                    constante em sua jornada. Acreditamos em uma economia circular, em que todos possam ser atendidos bem e gerar cada vez 
+                    mais negócios.</p>
             </div>        
 
         </section>
@@ -225,6 +275,7 @@
     </div>
 
     <script src="countdown.js"></script>
+    <script src="touching.js"></script>
     <!-- <script src="remkt.js"></script> -->
 </body>
 </html>

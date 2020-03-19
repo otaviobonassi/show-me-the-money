@@ -45,13 +45,17 @@ table {
 
 .container{
 	margin: auto;
-	min-width: 1000px;
+	/* min-width: 1000px; */
 }
 
 h1, h2, h3, h4, h5, h6, li, a, p{
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	text-decoration: none;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 * {
@@ -66,13 +70,13 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 	background-image: url("images/frame_web.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-	min-width: 1000px;
+	/* min-width: 1000px; */
 }
 
 .navbar {
 	padding: 2% 0 2% 0;
 	display: flex;
-	max-width: 1440px;
+	max-width: 1340px;
 	margin: auto;
 }
 
@@ -91,7 +95,7 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 	justify-self: end;
 }
 
-#links {
+.links {
 	margin: auto;
 	width: 70%;
 	height: 100%;
@@ -99,18 +103,27 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 	justify-content: space-evenly;
 }
 
-
-#links li{
-	font-weight: 500;
-	font-size: 0.9rem;
-	line-height: 20px;
+.header-hamburger-menu {
+	display: none;
 }
 
 
-#links li p:hover {
+.links li a{
+	font-weight: 500;
+	font-size: 0.9rem;
+	line-height: 20px;
+	color: #263238;
+}
+
+
+.links li a:hover {
 	text-decoration: underline;
 	font-weight: 700;
 	cursor: pointer;
+}
+
+.hamburger-menu {
+	display: none;
 }
 
 /* ------------------------------------------------------------- CTA --------------------------------------------------------------- */
@@ -126,8 +139,8 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 	display: flex;
 	margin: auto;
 	height:100%;
-	min-width: 1000px;
-	max-width: 1440px;
+	/* min-width: 1000px; */
+	max-width: 1340px;
 }
 
 .cta .image {
@@ -172,12 +185,16 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 }
 
 .cta .cta-text button:hover {
-	background: #E5E5E5;
+	background: #4D4D4D;
 }
 
 .cta .cta-text button a {
 	color: #FFFFFF;
 	font-size: 1.1rem;
+}
+
+.cta .cta-text h1 br {
+	display: none;
 }
 
 .highlight {
@@ -192,9 +209,9 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 /* ------------------------------------------------------------- CHAMARIZ --------------------------------------------------------------- */
 .chamariz {
 	display: flex;
-	padding-bottom: 5%;
-	min-width: 1000px;
-	max-width: 1440px;
+	padding-bottom: 6%;
+	/* min-width: 1000px; */
+	max-width: 1340px;
 	margin: 3% auto 0;
 }
 
@@ -238,7 +255,7 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 }
 
 .chamariz .cta-text button:hover {
-	background: #E5E5E5;
+	background: #D3A407;
 }
 
 .chamariz .cta-text button a {
@@ -251,10 +268,10 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 
 .palestrantes {
 	background-color: #333333;
-	padding: 5% 0;
+	padding: 6% 0;
 	color: #FFFFFF;
 	text-align: center;
-	min-width: 1000px;
+	/* min-width: 1000px; */
 }
 
 .palestrantes button {
@@ -270,7 +287,7 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 }
 	
 .palestrantes button:hover {
-	background: #E5E5E5;
+	background: #D3A407;
 }
 	
 .palestrantes button a {
@@ -290,25 +307,27 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 
 .palestrantes-container {
 	margin: auto;
-	width: 83%;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 2%;
 	margin-top: 2%;
+	max-width: 1340px;
 }
 
 .palestrantes-description {
 	display: flex;
-	width: 88%;
+	width: 98%;
 	margin: auto;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-top: 220px;
+	max-width: 1340px;
 }
 
 .palestrantes-description div{
-	width:28%;
+	width:23%;
 	text-align: center;
-	min-width: 220px;
+	/* min-width: 220px; */
 }
 
 .palestrantes-description div p{
@@ -319,9 +338,17 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 	margin-top: 5%;
 }
 
+.palestrante .seta-esquerda {
+	display: none;
+}
+
+.palestrante .seta-direita {
+	display:none;
+}
+
 .flip-card {
 	perspective: 1000px;
-	width: 217px;
+	width: 224px;
 	margin: auto;
 }
 
@@ -337,6 +364,8 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 
 
 .flip-card-front, .flip-card-back {
+	color: #333333;
+	width: 100%;
 	min-width: 217px;
 	min-height: 217px;
 	border-radius: 50%;
@@ -365,16 +394,17 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 .vendedor-do-futuro {
 	display: flex;
 	width: 90%;
-	margin: 5% auto 3%;
+	margin: 0 auto;
+	padding: 6% 0 6% 0;
 	justify-content: space-between;
 	align-items: center;
 	color: #263238;
-	min-width: 1000px;
-	max-width: 1440px;
+	/* min-width: 1000px; */
+	max-width: 1340px;
 }
 
 .vendedor-do-futuro .text {
-	width:55%;
+	width:56%;
 }
 
 .vendedor-do-futuro .text h2 b {
@@ -406,7 +436,7 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 }
 
 .vendedor-do-futuro .side-text {
-	width: 34%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	max-width: 412px;
@@ -457,10 +487,17 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 	font-size: 1.4rem;
 }
 
+.side-text .countDown h6 {
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
 .side-text .countDown .counter {
 	display: flex;
 	width: 80%;
-	margin: 4% auto;
+	margin: 8% auto 4%;
 	justify-content: space-between;
 }
 
@@ -501,7 +538,7 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 }
 
 .side-text .countDown button:hover {
-	background: #E5E5E5;
+	background: #4D4D4D;
 }
 
 .side-text .countDown button a {
@@ -512,39 +549,630 @@ h1, h2, h3, h4, h5, h6, li, a, p{
 /* ------------------------------------------------------------- FOOTER ------------------------------------------------------- */
 .quem-somos {
 	display:flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	height:47vh;
 	background-image: url(images/bottom-web.png);
 	background-size: cover;
 }
 
 .redes-sociais{
-	width:30%;
+	width:100%;
 	align-self: flex-end;
 	padding-bottom: 4%;
+	padding-right: 18%;
 	align-content: center;
+	max-width: 600px;
 }
 
 .redes-sociais h4 {
 	font-weight: 400;
-	margin-bottom: 4%;
+	margin-bottom: 3%;
 	text-align: center;
 }
 
 #redes-sociais {
 	text-align: center;
+	
 }
 
 .sobre-nos {
-	width: 40%;
+	width: 38%;
+	margin-top: 4%;
 	text-align: right;
 	align-self: center;
 	color: #FFFFFF;
-	margin: 30px 7% 0 0;
+	max-width: 600px;
 }
 
 .sobre-nos p {
-	margin-top: 3%;
-	font-size: 1rem;
+	margin-top: 4%;
+	font-size: 0.9rem;
 	font-weight: 400;
+	line-height: 1.2rem;
+	letter-spacing: 0.05rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------RESPONSIVIDADE-------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:500px){
+	body {
+		width: 100vw;
+	}
+
+/* ------------------------------------------------------------- NAVBAR --------------------------------------------------------------- */
+
+	.hero {
+		background-image: url("images/frame_mobile.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.navbar {
+		padding: 4% 0 2.5% 0;
+		display: flex;
+		align-items: center;
+		max-width: 1340px;
+		margin: auto;
+	}
+
+	.logo {
+		width:45%;
+		text-align: center;
+	}
+
+	.logo img {
+		max-width: 103px;
+	}
+
+	.hamburger-menu {
+		display: block;
+		width: 60%;
+		text-align: center;
+	}
+
+	.options {
+		display: none;
+	}
+
+	.options-on {
+		background: #333333;
+		position: absolute;
+		width: 50%;
+		right: 5%;
+		top: 8%;
+		height: 20vh;
+		border-radius: 7px;
+	}
+
+	.links-on {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.header-hamburger-menu-on {
+		display: inline;
+		color: white;
+		display: flex;
+	}
+
+	.header-hamburger-menu-on a {
+		display: inline-block;
+		padding-left: 40px;
+	}
+
+	.links-on li a{
+		color:#E8B200;	
+	}
+
+
+
+	/* ------------------------------------------------------------- CTA --------------------------------------------------------------- */
+	.cta .cta-text {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+	}
+
+	.cta {
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		align-items: center;
+		margin: auto;
+		height:100%;
+		/* min-width: 1000px; */
+		max-width: 1340px;
+	}
+
+	.cta .image {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		bottom: 3.2vw;
+	}
+
+	.cta .image img {
+		width: 100%;
+	}
+
+	.cta .cta-text h1  {
+		width: 92%;
+		text-align: center;
+		font-weight: 400;
+		font-size: 0.9rem;
+		line-height: 1.4rem;
+		letter-spacing: 0.02rem;
+	}
+
+	.cta .cta-text p  {
+		width: 92%;
+		text-align: center;
+		font-weight: 400;
+		font-size: 0.8rem;
+		line-height: 1.2rem;
+		letter-spacing: 0.02rem;
+		padding-top: 3%;
+	}
+
+	.cta .cta-text h1 br {
+		display: inline;
+	}
+
+	.cta .cta-text br {
+		display: none;
+	}
+
+	.cta .cta-text h1 b {
+		color: #E8B200;
+		background-color: #333333;
+		padding: 1% 1.1%;
+		border-radius: 0.9px;
+		font-size: 1.1rem;
+	}
+
+	.cta .cta-text span {
+		font-weight: 700;
+	}
+
+	.cta .cta-text button {
+		width: 70%;
+		background: #333333;
+		border: 0px;
+		border-radius: 100px;
+		padding: 3%;
+		margin: 6% 0;
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+		-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	}
+
+	.cta .cta-text button:hover {
+		background: #4D4D4D;
+	}
+
+	.cta .cta-text button a {
+		color: #FFFFFF;
+		font-size: 1rem;
+	}
+
+	/* ------------------------------------------------------------- CHAMARIZ --------------------------------------------------------------- */
+	.chamariz {
+		display: flex;
+		flex-direction: column-reverse;
+		padding-bottom: 6%;
+		align-items: center;
+		/* min-width: 1000px; */
+		max-width: 1340px;
+	}
+
+	.chamariz .image {
+		width: 80%;
+		margin: 5% auto;
+	}
+
+	.chamariz .cta-text {
+		font-weight: 500;
+		width: 100%;
+		text-align: center;
+	}
+
+	.chamariz .cta-text p {
+		font-weight: 400;
+		font-size: 0.9rem;
+		line-height: 1.7rem;
+		letter-spacing: 0.05rem;
+		width: 80%;
+		margin: 0 auto 5%;
+	}
+
+	.chamariz .cta-text h2 {
+		font-weight: 400;
+		font-size: 1.2rem;
+		line-height: 2rem;
+		letter-spacing: 0.05rem;
+		width: 80%;
+		margin: 3% auto;
+	}
+
+	.chamariz .cta-text p a {
+		color: #9C7700;
+	}
+
+	.chamariz .cta-text p a:hover {
+		text-decoration: underline;
+	}
+
+	.chamariz .cta-text button {
+		width: 50%;
+		background: #E8B200;
+		border: 0px;
+		border-radius: 100px;
+		padding: 2%;
+		margin: 2% 0;
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+		-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	}
+
+	.chamariz .cta-text button:hover {
+		background: #D3A407;
+	}
+
+	.chamariz .cta-text button a {
+		color: #333333;
+		font-weight: 700;
+		font-size: .9rem;
+	}
+
+	.highlight {
+		color: #E8B200;
+		background-color: #333333;
+		border-radius: 0.9px;
+		font-size: 1.8rem;
+	}
+
+	/* ------------------------------------------------------------- PALESTRANTES ------------------------------------------------------- */
+
+.palestrantes {
+	background-color: #333333;
+	padding: 6% 0;
+	color: #FFFFFF;
+	text-align: center;
+	height: 2100px;
+	/* min-width: 1000px; */
+}
+
+.palestrantes button {
+	width: 60%;
+	position: relative;
+	bottom: 1320px;
+	background: #E8B200;
+	border: 0px;
+	border-radius: 100px;
+	padding: 2%;
+	margin: 5% 0 0 0;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+	
+.palestrantes button:hover {
+	background: #D3A407;
+}
+	
+.palestrantes button a {
+	color: #333333;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.palestrantes h2 {
+	color: #E8B200;
+	font-weight: 500;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	letter-spacing: 0.4rem;
+	text-align: center;
+}
+
+.palestrantes-container {
+	margin: auto;
+	width: 100%;
+	display: flex;
+	height: 1400px;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 5%;
+	max-width: 1340px;
+}
+
+.palestrantes-description {
+	display: flex;
+	flex-direction: column;
+	height: 1500px;
+	justify-content: space-between;
+	position: relative;
+	bottom: 1380px;
+	width: 85%;
+	max-width: 1340px;
+}
+
+.palestrantes-description div{
+	width:100%;
+	text-align: center;
+	/* min-width: 220px; */
+}
+
+.palestrantes-description div p{
+	font-weight: 400;
+	font-size: 0.85rem;
+	line-height: 1.4rem;
+	letter-spacing: 0.07rem;
+	margin-top: 5%;
+}
+
+.palestrante .seta-esquerda {
+	display: none;
+}
+
+.palestrante .seta-direita {
+	display:none;
+}
+
+.flip-card {
+	perspective: 1000px;
+	width: 224px;
+	margin: auto;
+}
+
+.flip-card-front, .flip-card-back {
+	color: #333333;
+	width: 100%;
+	min-width: 217px;
+	min-height: 217px;
+	border-radius: 50%;
+	position: relative;
+	-webkit-backface-visibility: visible; /* Safari */
+	backface-visibility: visible;
+	background: #E8B200;
+}
+
+.flip-card-back {
+	display: none;
+}
+
+	/* ------------------------------------------------------------- VENDEDOR DO FUTURO ------------------------------------------------- */
+
+	.vendedor-do-futuro {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+		color: #263238;
+		/* min-width: 1000px; */
+		max-width: 1340px;
+	}
+
+	.vendedor-do-futuro .text {
+		width:85%;
+		padding: 2%;
+	}
+
+	.vendedor-do-futuro .text h2 b {
+		color: #E8B200;
+		background-color: #333333;
+		padding: 2% 2%;
+		border-radius: 0.9px;
+		line-height: 3rem;
+		font-size: 1.3rem;
+	}
+
+	.vendedor-do-futuro .text h2 {
+		line-height: 1.6rem;
+		font-size: 1rem;
+	}
+
+	.vendedor-do-futuro .text h4 {
+		margin-top: 7%;
+		letter-spacing: 0.05rem;
+		font-size: 1.2rem;
+	}
+
+	.vendedor-do-futuro .text h6 {
+		margin-top: 2%;
+		width: 100%;
+		font-weight: 500;
+		letter-spacing: 0.05rem;
+		font-size: 1rem;
+	}
+
+	.vendedor-do-futuro .text p {
+		font-size: 1rem;
+		letter-spacing: 0.02rem;
+		line-height: 1.6rem;
+		margin-top: 2%;
+	}
+
+	.vendedor-do-futuro .side-text {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		max-width: 412px;
+	}
+
+	.side-text .image {
+		width: 100%;
+		text-align: center;
+	}
+	.side-text .image img{
+		max-width: 280px;
+		
+	}
+
+	.side-text .countDown {
+		border-radius: 3px;
+		background: #E8B200;
+		padding: 5%;
+		margin-bottom: 10%;
+	}
+
+	.side-text .countDown h2 {
+		font-size: 1.8rem;
+		font-weight: 700;
+		padding-bottom: 5%;
+		text-align: center;
+		width: 95%;
+	}
+
+	.side-text .countDown p {
+		width: 98%;
+		text-align: center;
+		line-height: 1.9rem;
+		font-size: 1rem;
+		padding-bottom: 5%;
+	}
+
+	.side-text .countDown p b {
+		color: #E8B200;
+		background-color: #333333;
+		padding: 1% 3%;
+		border-radius: 0.9px;
+		font-size: 3rem;
+		line-height: 4.5rem;
+	}
+
+	.side-text .countDown p b span {
+		font-size: 1.4rem;
+	}
+
+	.side-text .countDown h6 {
+		width: 60%;
+		margin: auto;
+		text-align: center;
+		font-size: 1.2rem;
+	}
+
+	.side-text .countDown .counter {
+		display: flex;
+		width: 90%;
+		margin: 8% auto 4%;
+		justify-content: space-between;
+	}
+
+	.side-text .countDown .counter div {
+		width: 68px;
+		height: 73px;
+		background-color: #FFFFFF;
+		border-radius: 4px;
+	}
+
+	.side-text .countDown .counter div p {
+		text-align: center;
+		width: 100%;
+		font-size: 0.9rem;
+		line-height: 0.9rem;
+	}
+
+	#dias, #horas, #minutos, #segundos {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	.side-text .countDown div {
+		width: 100%;
+		text-align: center;
+	}
+
+	.side-text .countDown div button {
+		width: 70%;
+		background: #333333;
+		border: 0px;
+		border-radius: 100px;
+		padding: 2%;
+		margin: 6% 0 4% 0;
+		box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+		-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+	}
+
+	.side-text .countDown button:hover {
+		background: #4D4D4D;
+	}
+
+	.side-text .countDown button a {
+		color: #FFFFFF;
+		font-size: 1.1rem;
+	}
+
+	/* ------------------------------------------------------------- FOOTER ------------------------------------------------------- */
+	.quem-somos {
+		display:flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		align-items: center;
+		height:473px;
+		background-image: url(images/bottom-mobile.png);
+		background-position: bottom;
+		background-size: cover;
+	}
+
+	.redes-sociais{
+		width:100%;
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 10% 0 0 0;
+	}
+
+	.redes-sociais h4 {
+		font-weight: 400;
+		font-size: 0.9rem;
+		margin: 8px auto;
+	}
+
+	#redes-sociais {
+		text-align: center;
+		width: 100%;
+	}
+
+	#redes-sociais a {
+		padding: 0 2%;
+	}
+
+	.sobre-nos {
+		width: 85%;
+		margin-top: 90px;
+		text-align: right;
+		align-self: center;
+		color: #FFFFFF;
+		max-width: 600px;
+	}
+
+	.sobre-nos h2 {
+		font-size: 0.8rem;
+	}
+
+	.sobre-nos p {
+		margin-top: 4%;
+		font-size: 0.7rem;
+		font-weight: 400;
+		line-height: 1rem;
+		letter-spacing: 0.03rem;
+	}
 }
