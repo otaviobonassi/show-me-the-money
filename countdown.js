@@ -24,7 +24,7 @@ const seconds = document.querySelector('#segundos');
 
 function clock() {
     let tic = setInterval( function() {
-        let timeObj = timeCountDown("2020/03/26 11:59 AM"); //Para funcionar no IE, Firefox etc. a data tem que ser no formato YY/MM/DD HH:MM AM/PM;
+        let timeObj = timeCountDown("2020/03/26 7:00 PM"); //Para funcionar no IE, Firefox etc. a data tem que ser no formato YY/MM/DD HH:MM AM/PM;
 
         if (timeObj.timeLeft <= 0) {
             clearInterval(tic);
