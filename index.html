@@ -50,10 +50,10 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
-
     
 </head>
 <body>
+    <section>
 
 <!-------------------------------------------------------- REMKT --------------------------------------------------------->
         <!-- <section class="remkt off">
@@ -62,7 +62,6 @@
             </div>
         </section> -->
 
-<!-------------------------------------------------------- CHAT --------------------------------------------------------->
 
 <!-------------------------------------------------------- HERO --------------------------------------------------------->
         <section class="hero">
@@ -285,9 +284,93 @@
 
         </section>
 
+        <!----------------------------------------------------- CHAT ------------------------------------------------->
+        
+        <section class="chat">
+                <div class="chat-container-1 off">
+                    <section class="chat">
+                        <div class="chat">
+                            <div class="chat-container">
+                                <div class="text-default">
+                                    <div class="lines">
+                                        <div class="first-line">
+                                            <div id="contato"><img src="images/inside-chat.png" alt=""><h1>Contato</h1></div><button id="close-chat-1"><img src="images/closing-chat.png" alt=""></button>
+                                        </div>
+                                        <div class="text-balloon">
+                                            <img src="images/chat-text.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-area">
+                                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva aqui uma mensagem"></textarea>
+                                    <button id="send-text-1"><img src="images/send-text.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="chat-container-2 off">
+                    <section class="chat">
+                        <div class="chat">
+                            <div class="chat-container">
+                                <div class="text-default">
+                                    <div class="lines">
+                                        <div class="first-line">
+                                            <div id="contato"><img src="images/inside-chat.png" alt=""><h1>Contato</h1></div><button id="close-chat-2"><img src="images/closing-chat.png" alt=""></button>
+                                        </div>
+                                        <div class="text-balloon">
+                                            <img src="images/chat-text-2.png" alt="">
+                                        </div>
+                                        <div class="inputs">
+                                            <form method="POST" action="#">
+                                                <input type="text" name="name" id="name" placeholder="Nome" required>
+                                                <input type="email" name="email" id="email" placeholder="e-mail" required>
+                                                <button type="submit" id="send-text-2"><img src="images/send-text-white.png" alt=""></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="chat-container-3 off">
+                    <section class="chat">
+                        <div class="chat">
+                            <div class="chat-container">
+                                <div class="text-default">
+                                    <div class="lines">
+                                        <div class="first-line">
+                                            <div id="contato"><img src="images/inside-chat.png" alt=""><h1>Contato</h1></div><button id="close-chat-3"><img src="images/closing-chat.png" alt=""></button>
+                                        </div>
+                                        <div class="text-balloon">
+                                            <img src="images/chat-text-3.png" alt="">
+                                            <img src="images/chat-text-4.png" alt="">
+                                        </div>
+                                        <div id="redes-sociais-chat">
+                                            <a href="https://www.facebook.com/vendacriativaoficial/" target="_blank"><img src="images/facebook-chat.png" alt="Link para Facebook"></a>
+                                            <a href="https://www.linkedin.com/company/venda-criativa" target="_blank"><img src="images/linkedin-chat.png" alt="Link para LinkedIn"></a>
+                                            <a href="https://www.instagram.com/venda.criativa/" target="_blank"><img src="images/instagram-chat.png" alt="Link para Instagram"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="icons">
+                    <!-- <img src="images/chat-call.png" alt=""> -->
+                    <button id="chat"><img src="images/chat.png" alt=""></button>
+                </div>
+        </div>
+
+    </section>
 
     <script src="countdown.js"></script>
     <script src="touching.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="chat.js"></script>
     <!-- <script src="remkt.js"></script> -->
 
 </body>
