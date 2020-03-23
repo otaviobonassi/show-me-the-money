@@ -106,7 +106,7 @@ a {
 	max-width: 380px;
 	position: fixed;
 	right: 10px;
-	bottom: 120px;
+	bottom: 96px;
 }
 
 .chat-container {
@@ -151,7 +151,6 @@ a {
 .icons {
 	position: fixed;
 	right: 10px;
-	bottom: 10px;
 }
 
 .icons button {
