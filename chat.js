@@ -26,10 +26,6 @@ btnCloseTwo.addEventListener("click", () => {
     chatContainerTwo.classList.toggle("off");
 })
 
-document.addEventListener("click", (evt) => {
-    console.log(evt);
-});
-
 btnCloseThree.addEventListener("click", () => {
     chatContainerThree.classList.toggle("off");
 })

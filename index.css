@@ -104,6 +104,9 @@ a {
 	width: 30%;
 	min-width: 300px;
 	max-width: 380px;
+	position: fixed;
+	right: 2%;
+	bottom: 15%;
 }
 
 .chat-container {
@@ -143,12 +146,6 @@ a {
 .text-balloon img{
 	width: 85%;
 	margin:5% 0;
-}
-
-.chat {
-	position: fixed;
-	right: 2%;
-	bottom: 12%;
 }
 
 .icons {
