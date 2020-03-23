@@ -105,8 +105,8 @@ a {
 	min-width: 300px;
 	max-width: 380px;
 	position: fixed;
-	right: 2%;
-	bottom: 15%;
+	right: 10px;
+	bottom: 120px;
 }
 
 .chat-container {
@@ -150,8 +150,8 @@ a {
 
 .icons {
 	position: fixed;
-	right: 2%;
-	bottom: 2%;
+	right: 10px;
+	bottom: 10px;
 }
 
 .icons button {
