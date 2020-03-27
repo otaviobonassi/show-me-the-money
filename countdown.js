@@ -28,6 +28,10 @@ function clock() {
 
         if (timeObj.timeLeft <= 0) {
             clearInterval(tic);
+            timeObj.days = '00';
+            timeObj.hours = '00';
+            timeObj.minutes = '00';
+            timeObj.seconds = '00';
         }
 
         days.innerText = timeObj.days;

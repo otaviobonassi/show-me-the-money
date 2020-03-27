@@ -656,6 +656,7 @@ img[src="images/seta-direita-on.png"]{
 }
 
 .side-text .countDown h2 {
+	text-decoration: line-through;
 	font-size: 1.8rem;
 	font-weight: 700;
 	padding-bottom: 5%;
